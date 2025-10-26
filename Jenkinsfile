@@ -14,7 +14,7 @@ pipeline {
         REPO_URL = "https://github.com/Yas-Xavier/terraform-devops-finalexam"
 
         // Selenium test file
-        SELENIUM_SCRIPT = "https://github.com/Yas-Xavier/terraform-devops-finalexam/selenium_test.js"
+        SELENIUM_SCRIPT = "selenium_test.js"
 
         // Temp file to store test results
         TEST_RESULT_FILE = "test_result.txt"
