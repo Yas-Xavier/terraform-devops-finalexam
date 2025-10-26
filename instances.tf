@@ -52,4 +52,29 @@ resource "aws_instance" "staging" {
   tags = {
     Name = "Staging_Env"
   }
+
+}
+
+resource "aws_instance" "permanent_agent" {
+  ami             = "ami-0440d3b780d96b29d"
+  instance_type   = "t2.micro"
+  subnet_id       = aws_subnet.main_b.id
+  security_groups = [aws_security_group.web_sg.id]
+  key_name        = var.key_name
+
+  tags = {
+    Name = "Permanent_Agent"
+  }
+}
+
+resource "aws_instance" "dynamic_agent" {
+  ami             = "ami-0440d3b780d96b29d"
+  instance_type   = "t2.micro"
+  subnet_id       = aws_subnet.main_b.id
+  security_groups = [aws_security_group.web_sg.id]
+  key_name        = var.key_name
+
+  tags = {
+    Name = "Dynamic_Agent"
+  }
 }
