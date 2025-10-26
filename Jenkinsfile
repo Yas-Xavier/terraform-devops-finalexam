@@ -60,11 +60,11 @@ pipeline {
         }
 
         stage('Deploy to Staging') {
-          /*  when {
+            /*when {
                 expression {
                     return fileExists(env.TEST_RESULT_FILE) && readFile(env.TEST_RESULT_FILE).trim() == "true"
                 }
-          */  }
+            }*/
             steps {
                 echo "Deploying to Staging Environment..."
                 script {
@@ -123,3 +123,4 @@ pipeline {
             echo "Pipeline failed. Check console output for details."
         }
     }
+}
