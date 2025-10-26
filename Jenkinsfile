@@ -27,7 +27,7 @@ pipeline {
                 echo "Deploying Tic-Tac-Toe app to Testing Environment..."
                 script {
                     sh '''
-                    ssh -i /home/cloudshell-user/terraform-devops-finalexam/controller_agent_key ec2-user@$TESTING_SERVER '
+                    ssh -i /var/lib/jenkins/.ssh/controller_agent_key ec2-user@$TESTING_SERVER '
                         sudo rm -rf /var/www/html/*
                         sudo dnf update -y
                         sudo dnf install -y git httpd
@@ -69,7 +69,7 @@ pipeline {
                 echo "🚀 Deploying to Staging Environment..."
                 script {
                     sh '''
-                    ssh -i /home/cloudshell-user/terraform-devops-finalexam/controller_agent_key ec2-user@$STAGING_SERVER '
+                    ssh -i /var/lib/jenkins/.ssh/controller_agent_key ec2-user@$STAGING_SERVER '
                         sudo rm -rf /var/www/html/*
                         sudo dnf update -y
                         sudo dnf install -y git httpd
@@ -95,7 +95,7 @@ pipeline {
                     def servers = [env.PRODUCTION_SERVER1, env.PRODUCTION_SERVER2]
                     for (server in servers) {
                         sh """
-                        ssh -i /home/cloudshell-user/terraform-devops-finalexam/controller_agent_key ec2-user@${server} '
+                        ssh -i /var/lib/jenkins/.ssh/controller_agent_key ec2-user@${server} '
                             sudo rm -rf /var/www/html/*
                             sudo dnf update -y
                             sudo dnf install -y git httpd
