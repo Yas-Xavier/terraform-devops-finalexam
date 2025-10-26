@@ -1,7 +1,7 @@
 /*
 # This project is based on a public project but has been modified 
 # according to the requirements of the DevOps Level 2 course.
-# Instructor: Washington Valencia
+# Student: Yasmin Xavier Eraldo
 # Institution: CCTB College
 */
 
