@@ -11,7 +11,7 @@ pipeline {
         PRODUCTION_SERVER2 = "13.217.84.196"
       
         // GitHub repo for Tic Tac Toe
-        REPO_URL = "https://github.com/Yas-Xavier/terraform-devops-finalexam/tree/main/tic-tac-toe"
+        REPO_URL = "https://github.com/Yas-Xavier/terraform-devops-finalexam"
 
         // Selenium test file
         SELENIUM_SCRIPT = "https://github.com/Yas-Xavier/terraform-devops-finalexam/tree/main/tic-tac-toe/selenium_test.js"
