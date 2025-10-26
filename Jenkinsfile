@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Your SSH key credential stored in Jenkins
-        SSH_KEY = credentials('jenkins')
+        SSH_KEY = credentials('jenkins-key')
         
         TESTING_SERVER     = "98.85.228.12"
         STAGING_SERVER     = "98.94.74.150"
