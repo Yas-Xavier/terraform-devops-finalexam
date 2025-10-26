@@ -84,11 +84,11 @@ pipeline {
         }
 
         stage('Deploy to Production') {
-            when {
+            /*when {
                 expression {
                     return fileExists(env.TEST_RESULT_FILE) && readFile(env.TEST_RESULT_FILE).trim() == "true"
                 }
-            }
+            }*/
             steps {
                 echo "Deploying to both Production servers..."
                 script {
