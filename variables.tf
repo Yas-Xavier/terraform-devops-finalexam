@@ -1,3 +1,4 @@
 variable "key_name" {
-  default = "jenkins-key"
+  default = "controller_agent_key"
+
 }
