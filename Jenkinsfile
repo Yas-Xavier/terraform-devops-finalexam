@@ -5,10 +5,10 @@ pipeline {
         // Your SSH key credential stored in Jenkins
         SSH_KEY = credentials('controller_agent_key')
         
-        TESTING_SERVER     = "98.85.228.12"
-        STAGING_SERVER     = "98.94.74.150"
-        PRODUCTION_SERVER1 = "184.73.36.228"
-        PRODUCTION_SERVER2 = "54.145.218.233"
+        TESTING_SERVER     = "35.175.176.57"
+        STAGING_SERVER     = "98.93.242.7"
+        PRODUCTION_SERVER1 = "44.202.58.139"
+        PRODUCTION_SERVER2 = "54.175.58.85"
       
         // GitHub repo for Tic Tac Toe
         REPO_URL = "https://github.com/Yas-Xavier/terraform-devops-finalexam"
