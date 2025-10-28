@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    //agent any
+    agent { label 'final_slave' }
+
 
     environment {
         // Your SSH key credential stored in Jenkins
