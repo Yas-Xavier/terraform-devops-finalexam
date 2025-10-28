@@ -1,6 +1,6 @@
 pipeline {
-    //agent any
-    agent { label 'final_slave' }
+    agent any
+    //agent { label 'final_slave' }
 
 
     environment {
